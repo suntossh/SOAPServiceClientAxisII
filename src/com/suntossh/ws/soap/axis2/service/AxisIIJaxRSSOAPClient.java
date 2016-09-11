@@ -1,9 +1,22 @@
+/*
+ * 
+ */
 package com.suntossh.ws.soap.axis2.service;
 
 import java.rmi.RemoteException;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class AxisIIJaxRSSOAPClient.
+ */
 public class AxisIIJaxRSSOAPClient {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws RemoteException the remote exception
+	 */
 	public static void main(String[] args) throws RemoteException {
 		CalculatorServiceStub stub = new CalculatorServiceStub();
 

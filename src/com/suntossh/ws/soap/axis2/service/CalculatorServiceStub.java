@@ -9,22 +9,39 @@
 
         
 
-        /*
+        // TODO: Auto-generated Javadoc
+/*
         *  CalculatorServiceStub java implementation
         */
 
         
+        /**
+         * The Class CalculatorServiceStub.
+         */
         public class CalculatorServiceStub extends org.apache.axis2.client.Stub
         {
+        
+        /** The operations. */
         protected org.apache.axis2.description.AxisOperation[] _operations;
 
+        /** The fault exception name map. */
         //hashmaps to keep the fault mapping
         private java.util.HashMap faultExceptionNameMap = new java.util.HashMap();
+        
+        /** The fault exception class name map. */
         private java.util.HashMap faultExceptionClassNameMap = new java.util.HashMap();
+        
+        /** The fault message map. */
         private java.util.HashMap faultMessageMap = new java.util.HashMap();
 
+        /** The counter. */
         private static int counter = 0;
 
+        /**
+         * Gets the unique suffix.
+         *
+         * @return the unique suffix
+         */
         private static synchronized java.lang.String getUniqueSuffix(){
             // reset the counter if it is greater than 99999
             if (counter > 99999){
@@ -35,6 +52,11 @@
         }
 
     
+    /**
+     * Populate axis service.
+     *
+     * @throws AxisFault the axis fault
+     */
     private void populateAxisService() throws org.apache.axis2.AxisFault {
 
      //creating the Service with a unique name
@@ -84,6 +106,9 @@
         
         }
 
+    /**
+     * Populate faults.
+     */
     //populates the faults
     private void populateFaults(){
          
@@ -92,8 +117,12 @@
     }
 
     /**
-      *Constructor that takes in a configContext
-      */
+     * Constructor that takes in a configContext.
+     *
+     * @param configurationContext the configuration context
+     * @param targetEndpoint the target endpoint
+     * @throws AxisFault the axis fault
+     */
 
     public CalculatorServiceStub(org.apache.axis2.context.ConfigurationContext configurationContext,
        java.lang.String targetEndpoint)
@@ -103,8 +132,13 @@
 
 
    /**
-     * Constructor that takes in a configContext  and useseperate listner
-     */
+    * Constructor that takes in a configContext  and useseperate listner.
+    *
+    * @param configurationContext the configuration context
+    * @param targetEndpoint the target endpoint
+    * @param useSeparateListener the use separate listener
+    * @throws AxisFault the axis fault
+    */
    public CalculatorServiceStub(org.apache.axis2.context.ConfigurationContext configurationContext,
         java.lang.String targetEndpoint, boolean useSeparateListener)
         throws org.apache.axis2.AxisFault {
@@ -126,7 +160,10 @@
     }
 
     /**
-     * Default Constructor
+     * Default Constructor.
+     *
+     * @param configurationContext the configuration context
+     * @throws AxisFault the axis fault
      */
     public CalculatorServiceStub(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
         
@@ -135,7 +172,9 @@
     }
 
     /**
-     * Default Constructor
+     * Default Constructor.
+     *
+     * @throws AxisFault the axis fault
      */
     public CalculatorServiceStub() throws org.apache.axis2.AxisFault {
         
@@ -144,7 +183,10 @@
     }
 
     /**
-     * Constructor taking the target endpoint
+     * Constructor taking the target endpoint.
+     *
+     * @param targetEndpoint the target endpoint
+     * @throws AxisFault the axis fault
      */
     public CalculatorServiceStub(java.lang.String targetEndpoint) throws org.apache.axis2.AxisFault {
         this(null,targetEndpoint);
@@ -154,11 +196,12 @@
 
         
                     /**
-                     * Auto generated method signature
-                     * 
+                     * Auto generated method signature.
+                     *
+                     * @param sub0 the sub 0
+                     * @return the com.suntossh.ws.soap.axis 2 .service. calculator service stub. sub response
+                     * @throws RemoteException the remote exception
                      * @see com.suntossh.ws.soap.axis2.service.CalculatorService#sub
-                     * @param sub0
-                    
                      */
 
                     
@@ -276,12 +319,13 @@
         }
             
                 /**
-                * Auto generated method signature for Asynchronous Invocations
-                * 
-                * @see com.suntossh.ws.soap.axis2.service.CalculatorService#startsub
-                    * @param sub0
-                
-                */
+                 * Auto generated method signature for Asynchronous Invocations.
+                 *
+                 * @param sub0 the sub 0
+                 * @param callback the callback
+                 * @throws RemoteException the remote exception
+                 * @see com.suntossh.ws.soap.axis2.service.CalculatorService#startsub
+                 */
                 public  void startsub(
 
                  com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.Sub sub0,
@@ -423,11 +467,12 @@
                     }
                 
                     /**
-                     * Auto generated method signature
-                     * 
+                     * Auto generated method signature.
+                     *
+                     * @param add2 the add 2
+                     * @return the com.suntossh.ws.soap.axis 2 .service. calculator service stub. add response
+                     * @throws RemoteException the remote exception
                      * @see com.suntossh.ws.soap.axis2.service.CalculatorService#add
-                     * @param add2
-                    
                      */
 
                     
@@ -545,12 +590,13 @@
         }
             
                 /**
-                * Auto generated method signature for Asynchronous Invocations
-                * 
-                * @see com.suntossh.ws.soap.axis2.service.CalculatorService#startadd
-                    * @param add2
-                
-                */
+                 * Auto generated method signature for Asynchronous Invocations.
+                 *
+                 * @param add2 the add 2
+                 * @param callback the callback
+                 * @throws RemoteException the remote exception
+                 * @see com.suntossh.ws.soap.axis2.service.CalculatorService#startadd
+                 */
                 public  void startadd(
 
                  com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.Add add2,
@@ -692,11 +738,12 @@
                     }
                 
                     /**
-                     * Auto generated method signature
-                     * 
+                     * Auto generated method signature.
+                     *
+                     * @param testService4 the test service 4
+                     * @return the com.suntossh.ws.soap.axis 2 .service. calculator service stub. test service response
+                     * @throws RemoteException the remote exception
                      * @see com.suntossh.ws.soap.axis2.service.CalculatorService#testService
-                     * @param testService4
-                    
                      */
 
                     
@@ -814,12 +861,13 @@
         }
             
                 /**
-                * Auto generated method signature for Asynchronous Invocations
-                * 
-                * @see com.suntossh.ws.soap.axis2.service.CalculatorService#starttestService
-                    * @param testService4
-                
-                */
+                 * Auto generated method signature for Asynchronous Invocations.
+                 *
+                 * @param testService4 the test service 4
+                 * @param callback the callback
+                 * @throws RemoteException the remote exception
+                 * @see com.suntossh.ws.soap.axis2.service.CalculatorService#starttestService
+                 */
                 public  void starttestService(
 
                  com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.TestService testService4,
@@ -963,7 +1011,10 @@
 
 
        /**
-        *  A utility method that copies the namepaces from the SOAPEnvelope
+        *  A utility method that copies the namepaces from the SOAPEnvelope.
+        *
+        * @param env the env
+        * @return the envelope namespaces
         */
        private java.util.Map getEnvelopeNamespaces(org.apache.axiom.soap.SOAPEnvelope env){
         java.util.Map returnMap = new java.util.HashMap();
@@ -977,7 +1028,15 @@
 
     
     
+    /** The op name array. */
     private javax.xml.namespace.QName[] opNameArray = null;
+    
+    /**
+     * Optimize content.
+     *
+     * @param opName the op name
+     * @return true, if successful
+     */
     private boolean optimizeContent(javax.xml.namespace.QName opName) {
         
 
@@ -991,10 +1050,15 @@
         }
         return false;
     }
+     
+     /**
+      * The Class SubResponse.
+      */
      //http://localhost:8080/SOAPServiceAxisII/services/CalculatorService.CalculatorServiceHttpSoap12Endpoint/
         public static class SubResponse
         implements org.apache.axis2.databinding.ADBBean{
         
+                /** The Constant MY_QNAME. */
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://service.axis2.soap.ws.suntossh.com",
                 "subResponse",
@@ -1002,19 +1066,23 @@
 
             
 
-                        /**
-                        * field for _return
-                        */
+                        /** field for _return. */
 
                         
                                     protected int local_return ;
                                 
+                           /** The local return tracker. */
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
                            protected boolean local_returnTracker = false ;
 
+                           /**
+                            * Checks if is return specified.
+                            *
+                            * @return true, if is return specified
+                            */
                            public boolean is_returnSpecified(){
                                return local_returnTracker;
                            }
@@ -1022,9 +1090,10 @@
                            
 
                            /**
-                           * Auto generated getter method
-                           * @return int
-                           */
+                            * Auto generated getter method.
+                            *
+                            * @return int
+                            */
                            public  int get_return(){
                                return local_return;
                            }
@@ -1032,9 +1101,10 @@
                            
                         
                             /**
-                               * Auto generated setter method
-                               * @param param _return
-                               */
+                             * Auto generated setter method.
+                             *
+                             * @param param _return
+                             */
                                public void set_return(int param){
                             
                                        // setting primitive attribute tracker to true
@@ -1050,11 +1120,13 @@
      
      
         /**
-        *
-        * @param parentQName
-        * @param factory
-        * @return org.apache.axiom.om.OMElement
-        */
+         * Gets the OM element.
+         *
+         * @param parentQName the parent Q name
+         * @param factory the factory
+         * @return org.apache.axiom.om.OMElement
+         * @throws ADBException the ADB exception
+         */
        public org.apache.axiom.om.OMElement getOMElement (
                final javax.xml.namespace.QName parentQName,
                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
@@ -1067,12 +1139,18 @@
             
         }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                        javax.xml.stream.XMLStreamWriter xmlWriter)
                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
                            serialize(parentQName,xmlWriter,false);
          }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter, boolean)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                javax.xml.stream.XMLStreamWriter xmlWriter,
                                boolean serializeType)
@@ -1124,6 +1202,12 @@
 
         }
 
+        /**
+         * Generate prefix.
+         *
+         * @param namespace the namespace
+         * @return the java.lang. string
+         */
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://service.axis2.soap.ws.suntossh.com")){
                 return "ns1";
@@ -1133,6 +1217,12 @@
 
         /**
          * Utility method to write an element start tag.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param localPart the local part
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeStartElement(java.lang.String prefix, java.lang.String namespace, java.lang.String localPart,
                                        javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
@@ -1153,7 +1243,14 @@
         }
         
         /**
-         * Util method to write an attribute with the ns prefix
+         * Util method to write an attribute with the ns prefix.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String prefix,java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -1165,7 +1262,13 @@
         }
 
         /**
-         * Util method to write an attribute without the ns prefix
+         * Util method to write an attribute without the ns prefix.
+         *
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -1179,8 +1282,14 @@
 
 
            /**
-             * Util method to write an attribute without the ns prefix
-             */
+            * Util method to write an attribute without the ns prefix.
+            *
+            * @param namespace the namespace
+            * @param attName the att name
+            * @param qname the qname
+            * @param xmlWriter the xml writer
+            * @throws XMLStreamException the XML stream exception
+            */
             private void writeQNameAttribute(java.lang.String namespace, java.lang.String attName,
                                              javax.xml.namespace.QName qname, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -1203,8 +1312,13 @@
                     xmlWriter.writeAttribute(namespace, attName, attributeValue);
                 }
             }
+        
         /**
-         *  method to handle Qnames
+         *  method to handle Qnames.
+         *
+         * @param qname the qname
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
 
         private void writeQName(javax.xml.namespace.QName qname,
@@ -1230,6 +1344,13 @@
             }
         }
 
+        /**
+         * Write Q names.
+         *
+         * @param qnames the qnames
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
+         */
         private void writeQNames(javax.xml.namespace.QName[] qnames,
                                  javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -1269,7 +1390,12 @@
 
 
         /**
-         * Register a namespace prefix
+         * Register a namespace prefix.
+         *
+         * @param xmlWriter the xml writer
+         * @param namespace the namespace
+         * @return the java.lang. string
+         * @throws XMLStreamException the XML stream exception
          */
         private java.lang.String registerPrefix(javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace) throws javax.xml.stream.XMLStreamException {
             java.lang.String prefix = xmlWriter.getPrefix(namespace);
@@ -1292,9 +1418,12 @@
 
   
         /**
-        * databinding method to get an XML representation of this object
-        *
-        */
+         * databinding method to get an XML representation of this object.
+         *
+         * @param qName the q name
+         * @return the pull parser
+         * @throws ADBException the ADB exception
+         */
         public javax.xml.stream.XMLStreamReader getPullParser(javax.xml.namespace.QName qName)
                     throws org.apache.axis2.databinding.ADBException{
 
@@ -1320,7 +1449,7 @@
   
 
      /**
-      *  Factory class that keeps the parse method
+      *  Factory class that keeps the parse method.
       */
     public static class Factory{
 
@@ -1328,12 +1457,16 @@
         
 
         /**
-        * static method to create the object
-        * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
-        *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
-        * Postcondition: If this object is an element, the reader is positioned at its end element
-        *                If this object is a complex type, the reader is positioned at the end element of its outer element
-        */
+         * static method to create the object
+         * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
+         *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
+         * Postcondition: If this object is an element, the reader is positioned at its end element
+         *                If this object is a complex type, the reader is positioned at the end element of its outer element.
+         *
+         * @param reader the reader
+         * @return the sub response
+         * @throws Exception the exception
+         */
         public static SubResponse parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
             SubResponse object =
                 new SubResponse();
@@ -1435,9 +1568,13 @@
         }
            
     
+        /**
+         * The Class TestService.
+         */
         public static class TestService
         implements org.apache.axis2.databinding.ADBBean{
         
+                /** The Constant MY_QNAME. */
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://service.axis2.soap.ws.suntossh.com",
                 "testService",
@@ -1445,19 +1582,23 @@
 
             
 
-                        /**
-                        * field for YourName
-                        */
+                        /** field for YourName. */
 
                         
                                     protected java.lang.String localYourName ;
                                 
+                           /** The local your name tracker. */
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
                            protected boolean localYourNameTracker = false ;
 
+                           /**
+                            * Checks if is your name specified.
+                            *
+                            * @return true, if is your name specified
+                            */
                            public boolean isYourNameSpecified(){
                                return localYourNameTracker;
                            }
@@ -1465,9 +1606,10 @@
                            
 
                            /**
-                           * Auto generated getter method
-                           * @return java.lang.String
-                           */
+                            * Auto generated getter method.
+                            *
+                            * @return java.lang.String
+                            */
                            public  java.lang.String getYourName(){
                                return localYourName;
                            }
@@ -1475,9 +1617,10 @@
                            
                         
                             /**
-                               * Auto generated setter method
-                               * @param param YourName
-                               */
+                             * Auto generated setter method.
+                             *
+                             * @param param YourName
+                             */
                                public void setYourName(java.lang.String param){
                             localYourNameTracker = true;
                                    
@@ -1490,11 +1633,13 @@
      
      
         /**
-        *
-        * @param parentQName
-        * @param factory
-        * @return org.apache.axiom.om.OMElement
-        */
+         * Gets the OM element.
+         *
+         * @param parentQName the parent Q name
+         * @param factory the factory
+         * @return org.apache.axiom.om.OMElement
+         * @throws ADBException the ADB exception
+         */
        public org.apache.axiom.om.OMElement getOMElement (
                final javax.xml.namespace.QName parentQName,
                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
@@ -1507,12 +1652,18 @@
             
         }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                        javax.xml.stream.XMLStreamWriter xmlWriter)
                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
                            serialize(parentQName,xmlWriter,false);
          }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter, boolean)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                javax.xml.stream.XMLStreamWriter xmlWriter,
                                boolean serializeType)
@@ -1569,6 +1720,12 @@
 
         }
 
+        /**
+         * Generate prefix.
+         *
+         * @param namespace the namespace
+         * @return the java.lang. string
+         */
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://service.axis2.soap.ws.suntossh.com")){
                 return "ns1";
@@ -1578,6 +1735,12 @@
 
         /**
          * Utility method to write an element start tag.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param localPart the local part
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeStartElement(java.lang.String prefix, java.lang.String namespace, java.lang.String localPart,
                                        javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
@@ -1598,7 +1761,14 @@
         }
         
         /**
-         * Util method to write an attribute with the ns prefix
+         * Util method to write an attribute with the ns prefix.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String prefix,java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -1610,7 +1780,13 @@
         }
 
         /**
-         * Util method to write an attribute without the ns prefix
+         * Util method to write an attribute without the ns prefix.
+         *
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -1624,8 +1800,14 @@
 
 
            /**
-             * Util method to write an attribute without the ns prefix
-             */
+            * Util method to write an attribute without the ns prefix.
+            *
+            * @param namespace the namespace
+            * @param attName the att name
+            * @param qname the qname
+            * @param xmlWriter the xml writer
+            * @throws XMLStreamException the XML stream exception
+            */
             private void writeQNameAttribute(java.lang.String namespace, java.lang.String attName,
                                              javax.xml.namespace.QName qname, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -1648,8 +1830,13 @@
                     xmlWriter.writeAttribute(namespace, attName, attributeValue);
                 }
             }
+        
         /**
-         *  method to handle Qnames
+         *  method to handle Qnames.
+         *
+         * @param qname the qname
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
 
         private void writeQName(javax.xml.namespace.QName qname,
@@ -1675,6 +1862,13 @@
             }
         }
 
+        /**
+         * Write Q names.
+         *
+         * @param qnames the qnames
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
+         */
         private void writeQNames(javax.xml.namespace.QName[] qnames,
                                  javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -1714,7 +1908,12 @@
 
 
         /**
-         * Register a namespace prefix
+         * Register a namespace prefix.
+         *
+         * @param xmlWriter the xml writer
+         * @param namespace the namespace
+         * @return the java.lang. string
+         * @throws XMLStreamException the XML stream exception
          */
         private java.lang.String registerPrefix(javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace) throws javax.xml.stream.XMLStreamException {
             java.lang.String prefix = xmlWriter.getPrefix(namespace);
@@ -1737,9 +1936,12 @@
 
   
         /**
-        * databinding method to get an XML representation of this object
-        *
-        */
+         * databinding method to get an XML representation of this object.
+         *
+         * @param qName the q name
+         * @return the pull parser
+         * @throws ADBException the ADB exception
+         */
         public javax.xml.stream.XMLStreamReader getPullParser(javax.xml.namespace.QName qName)
                     throws org.apache.axis2.databinding.ADBException{
 
@@ -1765,7 +1967,7 @@
   
 
      /**
-      *  Factory class that keeps the parse method
+      *  Factory class that keeps the parse method.
       */
     public static class Factory{
 
@@ -1773,12 +1975,16 @@
         
 
         /**
-        * static method to create the object
-        * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
-        *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
-        * Postcondition: If this object is an element, the reader is positioned at its end element
-        *                If this object is a complex type, the reader is positioned at the end element of its outer element
-        */
+         * static method to create the object
+         * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
+         *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
+         * Postcondition: If this object is an element, the reader is positioned at its end element
+         *                If this object is a complex type, the reader is positioned at the end element of its outer element.
+         *
+         * @param reader the reader
+         * @return the test service
+         * @throws Exception the exception
+         */
         public static TestService parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
             TestService object =
                 new TestService();
@@ -1882,9 +2088,13 @@
         }
            
     
+        /**
+         * The Class TestServiceResponse.
+         */
         public static class TestServiceResponse
         implements org.apache.axis2.databinding.ADBBean{
         
+                /** The Constant MY_QNAME. */
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://service.axis2.soap.ws.suntossh.com",
                 "testServiceResponse",
@@ -1892,19 +2102,23 @@
 
             
 
-                        /**
-                        * field for _return
-                        */
+                        /** field for _return. */
 
                         
                                     protected java.lang.String local_return ;
                                 
+                           /** The local return tracker. */
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
                            protected boolean local_returnTracker = false ;
 
+                           /**
+                            * Checks if is return specified.
+                            *
+                            * @return true, if is return specified
+                            */
                            public boolean is_returnSpecified(){
                                return local_returnTracker;
                            }
@@ -1912,9 +2126,10 @@
                            
 
                            /**
-                           * Auto generated getter method
-                           * @return java.lang.String
-                           */
+                            * Auto generated getter method.
+                            *
+                            * @return java.lang.String
+                            */
                            public  java.lang.String get_return(){
                                return local_return;
                            }
@@ -1922,9 +2137,10 @@
                            
                         
                             /**
-                               * Auto generated setter method
-                               * @param param _return
-                               */
+                             * Auto generated setter method.
+                             *
+                             * @param param _return
+                             */
                                public void set_return(java.lang.String param){
                             local_returnTracker = true;
                                    
@@ -1937,11 +2153,13 @@
      
      
         /**
-        *
-        * @param parentQName
-        * @param factory
-        * @return org.apache.axiom.om.OMElement
-        */
+         * Gets the OM element.
+         *
+         * @param parentQName the parent Q name
+         * @param factory the factory
+         * @return org.apache.axiom.om.OMElement
+         * @throws ADBException the ADB exception
+         */
        public org.apache.axiom.om.OMElement getOMElement (
                final javax.xml.namespace.QName parentQName,
                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
@@ -1954,12 +2172,18 @@
             
         }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                        javax.xml.stream.XMLStreamWriter xmlWriter)
                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
                            serialize(parentQName,xmlWriter,false);
          }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter, boolean)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                javax.xml.stream.XMLStreamWriter xmlWriter,
                                boolean serializeType)
@@ -2016,6 +2240,12 @@
 
         }
 
+        /**
+         * Generate prefix.
+         *
+         * @param namespace the namespace
+         * @return the java.lang. string
+         */
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://service.axis2.soap.ws.suntossh.com")){
                 return "ns1";
@@ -2025,6 +2255,12 @@
 
         /**
          * Utility method to write an element start tag.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param localPart the local part
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeStartElement(java.lang.String prefix, java.lang.String namespace, java.lang.String localPart,
                                        javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
@@ -2045,7 +2281,14 @@
         }
         
         /**
-         * Util method to write an attribute with the ns prefix
+         * Util method to write an attribute with the ns prefix.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String prefix,java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -2057,7 +2300,13 @@
         }
 
         /**
-         * Util method to write an attribute without the ns prefix
+         * Util method to write an attribute without the ns prefix.
+         *
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -2071,8 +2320,14 @@
 
 
            /**
-             * Util method to write an attribute without the ns prefix
-             */
+            * Util method to write an attribute without the ns prefix.
+            *
+            * @param namespace the namespace
+            * @param attName the att name
+            * @param qname the qname
+            * @param xmlWriter the xml writer
+            * @throws XMLStreamException the XML stream exception
+            */
             private void writeQNameAttribute(java.lang.String namespace, java.lang.String attName,
                                              javax.xml.namespace.QName qname, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -2095,8 +2350,13 @@
                     xmlWriter.writeAttribute(namespace, attName, attributeValue);
                 }
             }
+        
         /**
-         *  method to handle Qnames
+         *  method to handle Qnames.
+         *
+         * @param qname the qname
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
 
         private void writeQName(javax.xml.namespace.QName qname,
@@ -2122,6 +2382,13 @@
             }
         }
 
+        /**
+         * Write Q names.
+         *
+         * @param qnames the qnames
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
+         */
         private void writeQNames(javax.xml.namespace.QName[] qnames,
                                  javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -2161,7 +2428,12 @@
 
 
         /**
-         * Register a namespace prefix
+         * Register a namespace prefix.
+         *
+         * @param xmlWriter the xml writer
+         * @param namespace the namespace
+         * @return the java.lang. string
+         * @throws XMLStreamException the XML stream exception
          */
         private java.lang.String registerPrefix(javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace) throws javax.xml.stream.XMLStreamException {
             java.lang.String prefix = xmlWriter.getPrefix(namespace);
@@ -2184,9 +2456,12 @@
 
   
         /**
-        * databinding method to get an XML representation of this object
-        *
-        */
+         * databinding method to get an XML representation of this object.
+         *
+         * @param qName the q name
+         * @return the pull parser
+         * @throws ADBException the ADB exception
+         */
         public javax.xml.stream.XMLStreamReader getPullParser(javax.xml.namespace.QName qName)
                     throws org.apache.axis2.databinding.ADBException{
 
@@ -2212,7 +2487,7 @@
   
 
      /**
-      *  Factory class that keeps the parse method
+      *  Factory class that keeps the parse method.
       */
     public static class Factory{
 
@@ -2220,12 +2495,16 @@
         
 
         /**
-        * static method to create the object
-        * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
-        *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
-        * Postcondition: If this object is an element, the reader is positioned at its end element
-        *                If this object is a complex type, the reader is positioned at the end element of its outer element
-        */
+         * static method to create the object
+         * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
+         *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
+         * Postcondition: If this object is an element, the reader is positioned at its end element
+         *                If this object is a complex type, the reader is positioned at the end element of its outer element.
+         *
+         * @param reader the reader
+         * @return the test service response
+         * @throws Exception the exception
+         */
         public static TestServiceResponse parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
             TestServiceResponse object =
                 new TestServiceResponse();
@@ -2329,8 +2608,20 @@
         }
            
     
+        /**
+         * The Class ExtensionMapper.
+         */
         public static class ExtensionMapper{
 
+          /**
+           * Gets the type object.
+           *
+           * @param namespaceURI the namespace URI
+           * @param typeName the type name
+           * @param reader the reader
+           * @return the type object
+           * @throws Exception the exception
+           */
           public static java.lang.Object getTypeObject(java.lang.String namespaceURI,
                                                        java.lang.String typeName,
                                                        javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
@@ -2341,9 +2632,13 @@
 
         }
     
+        /**
+         * The Class Add.
+         */
         public static class Add
         implements org.apache.axis2.databinding.ADBBean{
         
+                /** The Constant MY_QNAME. */
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://service.axis2.soap.ws.suntossh.com",
                 "add",
@@ -2351,19 +2646,23 @@
 
             
 
-                        /**
-                        * field for X
-                        */
+                        /** field for X. */
 
                         
                                     protected int localX ;
                                 
+                           /** The local X tracker. */
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
                            protected boolean localXTracker = false ;
 
+                           /**
+                            * Checks if is x specified.
+                            *
+                            * @return true, if is x specified
+                            */
                            public boolean isXSpecified(){
                                return localXTracker;
                            }
@@ -2371,9 +2670,10 @@
                            
 
                            /**
-                           * Auto generated getter method
-                           * @return int
-                           */
+                            * Auto generated getter method.
+                            *
+                            * @return int
+                            */
                            public  int getX(){
                                return localX;
                            }
@@ -2381,9 +2681,10 @@
                            
                         
                             /**
-                               * Auto generated setter method
-                               * @param param X
-                               */
+                             * Auto generated setter method.
+                             *
+                             * @param param X
+                             */
                                public void setX(int param){
                             
                                        // setting primitive attribute tracker to true
@@ -2396,19 +2697,23 @@
                                }
                             
 
-                        /**
-                        * field for Y
-                        */
+                        /** field for Y. */
 
                         
                                     protected int localY ;
                                 
+                           /** The local Y tracker. */
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
                            protected boolean localYTracker = false ;
 
+                           /**
+                            * Checks if is y specified.
+                            *
+                            * @return true, if is y specified
+                            */
                            public boolean isYSpecified(){
                                return localYTracker;
                            }
@@ -2416,9 +2721,10 @@
                            
 
                            /**
-                           * Auto generated getter method
-                           * @return int
-                           */
+                            * Auto generated getter method.
+                            *
+                            * @return int
+                            */
                            public  int getY(){
                                return localY;
                            }
@@ -2426,9 +2732,10 @@
                            
                         
                             /**
-                               * Auto generated setter method
-                               * @param param Y
-                               */
+                             * Auto generated setter method.
+                             *
+                             * @param param Y
+                             */
                                public void setY(int param){
                             
                                        // setting primitive attribute tracker to true
@@ -2444,11 +2751,13 @@
      
      
         /**
-        *
-        * @param parentQName
-        * @param factory
-        * @return org.apache.axiom.om.OMElement
-        */
+         * Gets the OM element.
+         *
+         * @param parentQName the parent Q name
+         * @param factory the factory
+         * @return org.apache.axiom.om.OMElement
+         * @throws ADBException the ADB exception
+         */
        public org.apache.axiom.om.OMElement getOMElement (
                final javax.xml.namespace.QName parentQName,
                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
@@ -2461,12 +2770,18 @@
             
         }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                        javax.xml.stream.XMLStreamWriter xmlWriter)
                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
                            serialize(parentQName,xmlWriter,false);
          }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter, boolean)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                javax.xml.stream.XMLStreamWriter xmlWriter,
                                boolean serializeType)
@@ -2531,6 +2846,12 @@
 
         }
 
+        /**
+         * Generate prefix.
+         *
+         * @param namespace the namespace
+         * @return the java.lang. string
+         */
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://service.axis2.soap.ws.suntossh.com")){
                 return "ns1";
@@ -2540,6 +2861,12 @@
 
         /**
          * Utility method to write an element start tag.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param localPart the local part
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeStartElement(java.lang.String prefix, java.lang.String namespace, java.lang.String localPart,
                                        javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
@@ -2560,7 +2887,14 @@
         }
         
         /**
-         * Util method to write an attribute with the ns prefix
+         * Util method to write an attribute with the ns prefix.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String prefix,java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -2572,7 +2906,13 @@
         }
 
         /**
-         * Util method to write an attribute without the ns prefix
+         * Util method to write an attribute without the ns prefix.
+         *
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -2586,8 +2926,14 @@
 
 
            /**
-             * Util method to write an attribute without the ns prefix
-             */
+            * Util method to write an attribute without the ns prefix.
+            *
+            * @param namespace the namespace
+            * @param attName the att name
+            * @param qname the qname
+            * @param xmlWriter the xml writer
+            * @throws XMLStreamException the XML stream exception
+            */
             private void writeQNameAttribute(java.lang.String namespace, java.lang.String attName,
                                              javax.xml.namespace.QName qname, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -2610,8 +2956,13 @@
                     xmlWriter.writeAttribute(namespace, attName, attributeValue);
                 }
             }
+        
         /**
-         *  method to handle Qnames
+         *  method to handle Qnames.
+         *
+         * @param qname the qname
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
 
         private void writeQName(javax.xml.namespace.QName qname,
@@ -2637,6 +2988,13 @@
             }
         }
 
+        /**
+         * Write Q names.
+         *
+         * @param qnames the qnames
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
+         */
         private void writeQNames(javax.xml.namespace.QName[] qnames,
                                  javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -2676,7 +3034,12 @@
 
 
         /**
-         * Register a namespace prefix
+         * Register a namespace prefix.
+         *
+         * @param xmlWriter the xml writer
+         * @param namespace the namespace
+         * @return the java.lang. string
+         * @throws XMLStreamException the XML stream exception
          */
         private java.lang.String registerPrefix(javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace) throws javax.xml.stream.XMLStreamException {
             java.lang.String prefix = xmlWriter.getPrefix(namespace);
@@ -2699,9 +3062,12 @@
 
   
         /**
-        * databinding method to get an XML representation of this object
-        *
-        */
+         * databinding method to get an XML representation of this object.
+         *
+         * @param qName the q name
+         * @return the pull parser
+         * @throws ADBException the ADB exception
+         */
         public javax.xml.stream.XMLStreamReader getPullParser(javax.xml.namespace.QName qName)
                     throws org.apache.axis2.databinding.ADBException{
 
@@ -2733,7 +3099,7 @@
   
 
      /**
-      *  Factory class that keeps the parse method
+      *  Factory class that keeps the parse method.
       */
     public static class Factory{
 
@@ -2741,12 +3107,16 @@
         
 
         /**
-        * static method to create the object
-        * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
-        *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
-        * Postcondition: If this object is an element, the reader is positioned at its end element
-        *                If this object is a complex type, the reader is positioned at the end element of its outer element
-        */
+         * static method to create the object
+         * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
+         *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
+         * Postcondition: If this object is an element, the reader is positioned at its end element
+         *                If this object is a complex type, the reader is positioned at the end element of its outer element.
+         *
+         * @param reader the reader
+         * @return the adds the
+         * @throws Exception the exception
+         */
         public static Add parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
             Add object =
                 new Add();
@@ -2874,9 +3244,13 @@
         }
            
     
+        /**
+         * The Class Sub.
+         */
         public static class Sub
         implements org.apache.axis2.databinding.ADBBean{
         
+                /** The Constant MY_QNAME. */
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://service.axis2.soap.ws.suntossh.com",
                 "sub",
@@ -2884,19 +3258,23 @@
 
             
 
-                        /**
-                        * field for X
-                        */
+                        /** field for X. */
 
                         
                                     protected int localX ;
                                 
+                           /** The local X tracker. */
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
                            protected boolean localXTracker = false ;
 
+                           /**
+                            * Checks if is x specified.
+                            *
+                            * @return true, if is x specified
+                            */
                            public boolean isXSpecified(){
                                return localXTracker;
                            }
@@ -2904,9 +3282,10 @@
                            
 
                            /**
-                           * Auto generated getter method
-                           * @return int
-                           */
+                            * Auto generated getter method.
+                            *
+                            * @return int
+                            */
                            public  int getX(){
                                return localX;
                            }
@@ -2914,9 +3293,10 @@
                            
                         
                             /**
-                               * Auto generated setter method
-                               * @param param X
-                               */
+                             * Auto generated setter method.
+                             *
+                             * @param param X
+                             */
                                public void setX(int param){
                             
                                        // setting primitive attribute tracker to true
@@ -2929,19 +3309,23 @@
                                }
                             
 
-                        /**
-                        * field for Y
-                        */
+                        /** field for Y. */
 
                         
                                     protected int localY ;
                                 
+                           /** The local Y tracker. */
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
                            protected boolean localYTracker = false ;
 
+                           /**
+                            * Checks if is y specified.
+                            *
+                            * @return true, if is y specified
+                            */
                            public boolean isYSpecified(){
                                return localYTracker;
                            }
@@ -2949,9 +3333,10 @@
                            
 
                            /**
-                           * Auto generated getter method
-                           * @return int
-                           */
+                            * Auto generated getter method.
+                            *
+                            * @return int
+                            */
                            public  int getY(){
                                return localY;
                            }
@@ -2959,9 +3344,10 @@
                            
                         
                             /**
-                               * Auto generated setter method
-                               * @param param Y
-                               */
+                             * Auto generated setter method.
+                             *
+                             * @param param Y
+                             */
                                public void setY(int param){
                             
                                        // setting primitive attribute tracker to true
@@ -2977,11 +3363,13 @@
      
      
         /**
-        *
-        * @param parentQName
-        * @param factory
-        * @return org.apache.axiom.om.OMElement
-        */
+         * Gets the OM element.
+         *
+         * @param parentQName the parent Q name
+         * @param factory the factory
+         * @return org.apache.axiom.om.OMElement
+         * @throws ADBException the ADB exception
+         */
        public org.apache.axiom.om.OMElement getOMElement (
                final javax.xml.namespace.QName parentQName,
                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
@@ -2994,12 +3382,18 @@
             
         }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                        javax.xml.stream.XMLStreamWriter xmlWriter)
                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
                            serialize(parentQName,xmlWriter,false);
          }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter, boolean)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                javax.xml.stream.XMLStreamWriter xmlWriter,
                                boolean serializeType)
@@ -3064,6 +3458,12 @@
 
         }
 
+        /**
+         * Generate prefix.
+         *
+         * @param namespace the namespace
+         * @return the java.lang. string
+         */
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://service.axis2.soap.ws.suntossh.com")){
                 return "ns1";
@@ -3073,6 +3473,12 @@
 
         /**
          * Utility method to write an element start tag.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param localPart the local part
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeStartElement(java.lang.String prefix, java.lang.String namespace, java.lang.String localPart,
                                        javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
@@ -3093,7 +3499,14 @@
         }
         
         /**
-         * Util method to write an attribute with the ns prefix
+         * Util method to write an attribute with the ns prefix.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String prefix,java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -3105,7 +3518,13 @@
         }
 
         /**
-         * Util method to write an attribute without the ns prefix
+         * Util method to write an attribute without the ns prefix.
+         *
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -3119,8 +3538,14 @@
 
 
            /**
-             * Util method to write an attribute without the ns prefix
-             */
+            * Util method to write an attribute without the ns prefix.
+            *
+            * @param namespace the namespace
+            * @param attName the att name
+            * @param qname the qname
+            * @param xmlWriter the xml writer
+            * @throws XMLStreamException the XML stream exception
+            */
             private void writeQNameAttribute(java.lang.String namespace, java.lang.String attName,
                                              javax.xml.namespace.QName qname, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -3143,8 +3568,13 @@
                     xmlWriter.writeAttribute(namespace, attName, attributeValue);
                 }
             }
+        
         /**
-         *  method to handle Qnames
+         *  method to handle Qnames.
+         *
+         * @param qname the qname
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
 
         private void writeQName(javax.xml.namespace.QName qname,
@@ -3170,6 +3600,13 @@
             }
         }
 
+        /**
+         * Write Q names.
+         *
+         * @param qnames the qnames
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
+         */
         private void writeQNames(javax.xml.namespace.QName[] qnames,
                                  javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -3209,7 +3646,12 @@
 
 
         /**
-         * Register a namespace prefix
+         * Register a namespace prefix.
+         *
+         * @param xmlWriter the xml writer
+         * @param namespace the namespace
+         * @return the java.lang. string
+         * @throws XMLStreamException the XML stream exception
          */
         private java.lang.String registerPrefix(javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace) throws javax.xml.stream.XMLStreamException {
             java.lang.String prefix = xmlWriter.getPrefix(namespace);
@@ -3232,9 +3674,12 @@
 
   
         /**
-        * databinding method to get an XML representation of this object
-        *
-        */
+         * databinding method to get an XML representation of this object.
+         *
+         * @param qName the q name
+         * @return the pull parser
+         * @throws ADBException the ADB exception
+         */
         public javax.xml.stream.XMLStreamReader getPullParser(javax.xml.namespace.QName qName)
                     throws org.apache.axis2.databinding.ADBException{
 
@@ -3266,7 +3711,7 @@
   
 
      /**
-      *  Factory class that keeps the parse method
+      *  Factory class that keeps the parse method.
       */
     public static class Factory{
 
@@ -3274,12 +3719,16 @@
         
 
         /**
-        * static method to create the object
-        * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
-        *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
-        * Postcondition: If this object is an element, the reader is positioned at its end element
-        *                If this object is a complex type, the reader is positioned at the end element of its outer element
-        */
+         * static method to create the object
+         * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
+         *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
+         * Postcondition: If this object is an element, the reader is positioned at its end element
+         *                If this object is a complex type, the reader is positioned at the end element of its outer element.
+         *
+         * @param reader the reader
+         * @return the sub
+         * @throws Exception the exception
+         */
         public static Sub parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
             Sub object =
                 new Sub();
@@ -3407,9 +3856,13 @@
         }
            
     
+        /**
+         * The Class AddResponse.
+         */
         public static class AddResponse
         implements org.apache.axis2.databinding.ADBBean{
         
+                /** The Constant MY_QNAME. */
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://service.axis2.soap.ws.suntossh.com",
                 "addResponse",
@@ -3417,19 +3870,23 @@
 
             
 
-                        /**
-                        * field for _return
-                        */
+                        /** field for _return. */
 
                         
                                     protected int local_return ;
                                 
+                           /** The local return tracker. */
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
                            protected boolean local_returnTracker = false ;
 
+                           /**
+                            * Checks if is return specified.
+                            *
+                            * @return true, if is return specified
+                            */
                            public boolean is_returnSpecified(){
                                return local_returnTracker;
                            }
@@ -3437,9 +3894,10 @@
                            
 
                            /**
-                           * Auto generated getter method
-                           * @return int
-                           */
+                            * Auto generated getter method.
+                            *
+                            * @return int
+                            */
                            public  int get_return(){
                                return local_return;
                            }
@@ -3447,9 +3905,10 @@
                            
                         
                             /**
-                               * Auto generated setter method
-                               * @param param _return
-                               */
+                             * Auto generated setter method.
+                             *
+                             * @param param _return
+                             */
                                public void set_return(int param){
                             
                                        // setting primitive attribute tracker to true
@@ -3465,11 +3924,13 @@
      
      
         /**
-        *
-        * @param parentQName
-        * @param factory
-        * @return org.apache.axiom.om.OMElement
-        */
+         * Gets the OM element.
+         *
+         * @param parentQName the parent Q name
+         * @param factory the factory
+         * @return org.apache.axiom.om.OMElement
+         * @throws ADBException the ADB exception
+         */
        public org.apache.axiom.om.OMElement getOMElement (
                final javax.xml.namespace.QName parentQName,
                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
@@ -3482,12 +3943,18 @@
             
         }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                        javax.xml.stream.XMLStreamWriter xmlWriter)
                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
                            serialize(parentQName,xmlWriter,false);
          }
 
+         /* (non-Javadoc)
+          * @see org.apache.axis2.databinding.ADBBean#serialize(javax.xml.namespace.QName, javax.xml.stream.XMLStreamWriter, boolean)
+          */
          public void serialize(final javax.xml.namespace.QName parentQName,
                                javax.xml.stream.XMLStreamWriter xmlWriter,
                                boolean serializeType)
@@ -3539,6 +4006,12 @@
 
         }
 
+        /**
+         * Generate prefix.
+         *
+         * @param namespace the namespace
+         * @return the java.lang. string
+         */
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://service.axis2.soap.ws.suntossh.com")){
                 return "ns1";
@@ -3548,6 +4021,12 @@
 
         /**
          * Utility method to write an element start tag.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param localPart the local part
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeStartElement(java.lang.String prefix, java.lang.String namespace, java.lang.String localPart,
                                        javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
@@ -3568,7 +4047,14 @@
         }
         
         /**
-         * Util method to write an attribute with the ns prefix
+         * Util method to write an attribute with the ns prefix.
+         *
+         * @param prefix the prefix
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String prefix,java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -3580,7 +4066,13 @@
         }
 
         /**
-         * Util method to write an attribute without the ns prefix
+         * Util method to write an attribute without the ns prefix.
+         *
+         * @param namespace the namespace
+         * @param attName the att name
+         * @param attValue the att value
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
         private void writeAttribute(java.lang.String namespace,java.lang.String attName,
                                     java.lang.String attValue,javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException{
@@ -3594,8 +4086,14 @@
 
 
            /**
-             * Util method to write an attribute without the ns prefix
-             */
+            * Util method to write an attribute without the ns prefix.
+            *
+            * @param namespace the namespace
+            * @param attName the att name
+            * @param qname the qname
+            * @param xmlWriter the xml writer
+            * @throws XMLStreamException the XML stream exception
+            */
             private void writeQNameAttribute(java.lang.String namespace, java.lang.String attName,
                                              javax.xml.namespace.QName qname, javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -3618,8 +4116,13 @@
                     xmlWriter.writeAttribute(namespace, attName, attributeValue);
                 }
             }
+        
         /**
-         *  method to handle Qnames
+         *  method to handle Qnames.
+         *
+         * @param qname the qname
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
          */
 
         private void writeQName(javax.xml.namespace.QName qname,
@@ -3645,6 +4148,13 @@
             }
         }
 
+        /**
+         * Write Q names.
+         *
+         * @param qnames the qnames
+         * @param xmlWriter the xml writer
+         * @throws XMLStreamException the XML stream exception
+         */
         private void writeQNames(javax.xml.namespace.QName[] qnames,
                                  javax.xml.stream.XMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
 
@@ -3684,7 +4194,12 @@
 
 
         /**
-         * Register a namespace prefix
+         * Register a namespace prefix.
+         *
+         * @param xmlWriter the xml writer
+         * @param namespace the namespace
+         * @return the java.lang. string
+         * @throws XMLStreamException the XML stream exception
          */
         private java.lang.String registerPrefix(javax.xml.stream.XMLStreamWriter xmlWriter, java.lang.String namespace) throws javax.xml.stream.XMLStreamException {
             java.lang.String prefix = xmlWriter.getPrefix(namespace);
@@ -3707,9 +4222,12 @@
 
   
         /**
-        * databinding method to get an XML representation of this object
-        *
-        */
+         * databinding method to get an XML representation of this object.
+         *
+         * @param qName the q name
+         * @return the pull parser
+         * @throws ADBException the ADB exception
+         */
         public javax.xml.stream.XMLStreamReader getPullParser(javax.xml.namespace.QName qName)
                     throws org.apache.axis2.databinding.ADBException{
 
@@ -3735,7 +4253,7 @@
   
 
      /**
-      *  Factory class that keeps the parse method
+      *  Factory class that keeps the parse method.
       */
     public static class Factory{
 
@@ -3743,12 +4261,16 @@
         
 
         /**
-        * static method to create the object
-        * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
-        *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
-        * Postcondition: If this object is an element, the reader is positioned at its end element
-        *                If this object is a complex type, the reader is positioned at the end element of its outer element
-        */
+         * static method to create the object
+         * Precondition:  If this object is an element, the current or next start element starts this object and any intervening reader events are ignorable
+         *                If this object is not an element, it is a complex type and the reader is at the event just after the outer start element
+         * Postcondition: If this object is an element, the reader is positioned at its end element
+         *                If this object is a complex type, the reader is positioned at the end element of its outer element.
+         *
+         * @param reader the reader
+         * @return the adds the response
+         * @throws Exception the exception
+         */
         public static AddResponse parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
             AddResponse object =
                 new AddResponse();
@@ -3850,6 +4372,14 @@
         }
            
     
+            /**
+             * To OM.
+             *
+             * @param param the param
+             * @param optimizeContent the optimize content
+             * @return the org.apache.axiom.om. OM element
+             * @throws AxisFault the axis fault
+             */
             private  org.apache.axiom.om.OMElement  toOM(com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.Sub param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
@@ -3864,6 +4394,14 @@
 
             }
         
+            /**
+             * To OM.
+             *
+             * @param param the param
+             * @param optimizeContent the optimize content
+             * @return the org.apache.axiom.om. OM element
+             * @throws AxisFault the axis fault
+             */
             private  org.apache.axiom.om.OMElement  toOM(com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.SubResponse param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
@@ -3878,6 +4416,14 @@
 
             }
         
+            /**
+             * To OM.
+             *
+             * @param param the param
+             * @param optimizeContent the optimize content
+             * @return the org.apache.axiom.om. OM element
+             * @throws AxisFault the axis fault
+             */
             private  org.apache.axiom.om.OMElement  toOM(com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.Add param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
@@ -3892,6 +4438,14 @@
 
             }
         
+            /**
+             * To OM.
+             *
+             * @param param the param
+             * @param optimizeContent the optimize content
+             * @return the org.apache.axiom.om. OM element
+             * @throws AxisFault the axis fault
+             */
             private  org.apache.axiom.om.OMElement  toOM(com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.AddResponse param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
@@ -3906,6 +4460,14 @@
 
             }
         
+            /**
+             * To OM.
+             *
+             * @param param the param
+             * @param optimizeContent the optimize content
+             * @return the org.apache.axiom.om. OM element
+             * @throws AxisFault the axis fault
+             */
             private  org.apache.axiom.om.OMElement  toOM(com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.TestService param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
@@ -3920,6 +4482,14 @@
 
             }
         
+            /**
+             * To OM.
+             *
+             * @param param the param
+             * @param optimizeContent the optimize content
+             * @return the org.apache.axiom.om. OM element
+             * @throws AxisFault the axis fault
+             */
             private  org.apache.axiom.om.OMElement  toOM(com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.TestServiceResponse param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
@@ -3935,6 +4505,16 @@
             }
         
                                     
+                                        /**
+                                         * To envelope.
+                                         *
+                                         * @param factory the factory
+                                         * @param param the param
+                                         * @param optimizeContent the optimize content
+                                         * @param methodQName the method Q name
+                                         * @return the org.apache.axiom.soap. SOAP envelope
+                                         * @throws AxisFault the axis fault
+                                         */
                                         private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.Sub param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
                                         throws org.apache.axis2.AxisFault{
 
@@ -3956,7 +4536,17 @@
 
                              
                                     
-                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.Add param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
+                                        /**
+                              * To envelope.
+                              *
+                              * @param factory the factory
+                              * @param param the param
+                              * @param optimizeContent the optimize content
+                              * @param methodQName the method Q name
+                              * @return the org.apache.axiom.soap. SOAP envelope
+                              * @throws AxisFault the axis fault
+                              */
+                             private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.Add param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
                                         throws org.apache.axis2.AxisFault{
 
                                              
@@ -3977,7 +4567,17 @@
 
                              
                                     
-                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.TestService param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
+                                        /**
+                              * To envelope.
+                              *
+                              * @param factory the factory
+                              * @param param the param
+                              * @param optimizeContent the optimize content
+                              * @param methodQName the method Q name
+                              * @return the org.apache.axiom.soap. SOAP envelope
+                              * @throws AxisFault the axis fault
+                              */
+                             private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.TestService param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
                                         throws org.apache.axis2.AxisFault{
 
                                              
@@ -4000,13 +4600,25 @@
 
 
         /**
-        *  get the default envelope
-        */
+                              *  get the default envelope.
+                              *
+                              * @param factory the factory
+                              * @return the org.apache.axiom.soap. SOAP envelope
+                              */
         private org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory){
         return factory.getDefaultEnvelope();
         }
 
 
+        /**
+         * From OM.
+         *
+         * @param param the param
+         * @param type the type
+         * @param extraNamespaces the extra namespaces
+         * @return the java.lang. object
+         * @throws AxisFault the axis fault
+         */
         private  java.lang.Object fromOM(
         org.apache.axiom.om.OMElement param,
         java.lang.Class type,

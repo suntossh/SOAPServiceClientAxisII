@@ -8,7 +8,8 @@
 
     package com.suntossh.ws.soap.axis2.service;
 
-    /**
+    // TODO: Auto-generated Javadoc
+/**
      *  CalculatorServiceCallbackHandler Callback class, Users can extend this class and implement
      *  their own receiveResult and receiveError methods.
      */
@@ -16,6 +17,7 @@
 
 
 
+    /** The client data. */
     protected Object clientData;
 
     /**
@@ -29,14 +31,16 @@
     }
 
     /**
-    * Please use this constructor if you don't want to set any clientData
-    */
+     * Please use this constructor if you don't want to set any clientData.
+     */
     public CalculatorServiceCallbackHandler(){
         this.clientData = null;
     }
 
     /**
-     * Get the client data
+     * Get the client data.
+     *
+     * @return the client data
      */
 
      public Object getClientData() {
@@ -46,7 +50,9 @@
         
            /**
             * auto generated Axis2 call back method for sub method
-            * override this method for handling normal response from sub operation
+            * override this method for handling normal response from sub operation.
+            *
+            * @param result the result
             */
            public void receiveResultsub(
                     com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.SubResponse result
@@ -55,14 +61,18 @@
 
           /**
            * auto generated Axis2 Error handler
-           * override this method for handling error response from sub operation
+           * override this method for handling error response from sub operation.
+           *
+           * @param e the e
            */
             public void receiveErrorsub(java.lang.Exception e) {
             }
                 
            /**
             * auto generated Axis2 call back method for add method
-            * override this method for handling normal response from add operation
+            * override this method for handling normal response from add operation.
+            *
+            * @param result the result
             */
            public void receiveResultadd(
                     com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.AddResponse result
@@ -71,14 +81,18 @@
 
           /**
            * auto generated Axis2 Error handler
-           * override this method for handling error response from add operation
+           * override this method for handling error response from add operation.
+           *
+           * @param e the e
            */
             public void receiveErroradd(java.lang.Exception e) {
             }
                 
            /**
             * auto generated Axis2 call back method for testService method
-            * override this method for handling normal response from testService operation
+            * override this method for handling normal response from testService operation.
+            *
+            * @param result the result
             */
            public void receiveResulttestService(
                     com.suntossh.ws.soap.axis2.service.CalculatorServiceStub.TestServiceResponse result
@@ -87,7 +101,9 @@
 
           /**
            * auto generated Axis2 Error handler
-           * override this method for handling error response from testService operation
+           * override this method for handling error response from testService operation.
+           *
+           * @param e the e
            */
             public void receiveErrortestService(java.lang.Exception e) {
             }
